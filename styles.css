@@ -1,14 +1,19 @@
 html {
-    background-color:blanchedalmond;
+    /* background-color:blanchedalmond; */
+    background-color: #fffff8;
+    opacity: 1;
+    background-image: radial-gradient(circle at center center, #fffefa, #fffff8), repeating-radial-gradient(circle at center center, #fffefa, #fffefa, 15px, transparent 30px, transparent 15px);
+    background-blend-mode: multiply;
 }
+
 /* Dealing with the nav bar */
 a:link, .nav_link, a:visited, .nav_link:visited:visited {
     color:darkgoldenrod;
 }
 
-a:hover, .nav_link:hover:hover {
+nav a:hover, .nav_link:hover:hover {
     color:cornsilk;
-    background-color:maroon;
+    /* background-color:maroon; */
 }
 
 a:active, .nav_link:active:active {
@@ -44,7 +49,13 @@ nav li {
 nav li a {
     display: block;
     text-align: center;
-    padding: 15px;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+
+/* Link Styling */
+a:hover {
+    color: maroon;
 }
 
 /* Images */
