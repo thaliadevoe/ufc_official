@@ -1,0 +1,89 @@
+html {
+    background-color:blanchedalmond;
+}
+/* Dealing with the nav bar */
+a:link, .nav_link, a:visited, .nav_link:visited:visited {
+    color:darkgoldenrod;
+}
+
+a:hover, .nav_link:hover:hover {
+    color:cornsilk;
+    background-color:maroon;
+}
+
+a:active, .nav_link:active:active {
+    color:rgb(205, 154, 92);
+}
+
+nav {
+    margin-bottom: 20px;
+    background-image:url(/Media/wood_frame.jpg);
+    width: 100%;
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    align-items:center;
+}
+
+nav li {
+    display: inline;
+    float:left;
+    font-size:larger;
+    font-variant:small-caps;
+}
+
+nav li a {
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Images */
+
+img {
+    max-width: 500px;
+    padding: 0px;
+    position: relative;
+}
+
+.image__block {
+    max-width: 500px;
+    position: relative;
+    margin: 30px 100px;
+    display:flex;
+    align-content: center;
+}
+
+.image__description {
+    visibility: hidden;
+    width: 100%;
+    padding: 0px 0px;
+    text-align:center;
+    margin-bottom: 15px;
+    color: white;
+    background-color:dimgray;
+    position:absolute;
+    transition: opacity .2s, visibility .2s;
+    opacity: 0;
+}
+
+.image__block:hover .image__description {
+    visibility: visible;
+    opacity: .8;
+}
+
+#photos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
