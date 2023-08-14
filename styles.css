@@ -1,9 +1,32 @@
 html {
     /* background-color:blanchedalmond; */
-    background-color: #fffff8;
+    /* background-color: #fffff8;
     opacity: 1;
     background-image: radial-gradient(circle at center center, #fffefa, #fffff8), repeating-radial-gradient(circle at center center, #fffefa, #fffefa, 15px, transparent 30px, transparent 15px);
-    background-blend-mode: multiply;
+    background-blend-mode: multiply; */
+    background-size: cover;
+}
+
+@font-face {
+    font-family: stripescaps;
+    src:url(/stripescaps/StripesCaps.ttf);
+}
+
+h1 {
+    font-family:'Courier New', Courier, monospace;
+    font-variant: small-caps;
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+p {
+    font-family: Courier, monospace;
+    font-variant: small-caps;
+    font-weight: 600;
+    font-size: larger;
+    color: rgb(32, 14, 0);
+
 }
 
 /* Dealing with the nav bar */
@@ -22,13 +45,15 @@ a:active, .nav_link:active:active {
 
 nav {
     margin-bottom: 20px;
-    background-image:url(/Media/wood_frame.jpg);
+    background-image: url(Media/photos/other/tree_closeup.png);
+    background-size: cover;
     width: 100%;
     padding: 15px 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    border-radius: 50px;
 }
 
 nav ul {
@@ -42,8 +67,9 @@ nav ul {
 nav li {
     display: inline;
     float:left;
-    font-size:larger;
+    font-size:x-large;
     font-variant:small-caps;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 nav li a {
@@ -53,33 +79,87 @@ nav li a {
     text-decoration: none;
 }
 
+/* Nav Dropdown */
+
+.nav_dropdown {
+    visibility:hidden;
+    transition: 0.1s;
+    align-content: center;
+    max-width: 100px;
+    margin: 0 32px;
+    padding: 0;
+    flex-direction: column;
+    display: flex;
+    position:absolute;
+    background-color: #021901;
+    opacity: 0.95;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #211a05 4px ), repeating-linear-gradient( #030f0055, #051f0055 );
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+
+.nav_dropdown_link a {
+    margin: 10px 12px;
+    padding: 0;
+    align-items: center;
+    font-size:large;
+}
+
+#dropdown_catalyst:hover .nav_dropdown {
+    visibility: visible;
+}
+
 /* Link Styling */
 a:hover {
     color: maroon;
 }
 
-/* Images */
+/* Images for the Home page */
+.photo_circle img{
+    border-radius: 50%;
+    max-width: 150px;
+    border: 4px double darkgoldenrod;
+}
 
-img {
-    max-width: 500px;
-    padding: 0px;
+.photo_circle {
+    display:flex;
+    /* justify-content: center; */
     position: relative;
 }
 
+#homepage_photo_lineup {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+/* Images - Gallery */
+
+img {
+    max-width: 450px;
+    margin: 30px 0;
+    border-radius: 5%;
+    border: 3px solid darkgoldenrod;
+    padding: 1px;
+}
+
 .image__block {
-    max-width: 500px;
+    width: 500px;
     position: relative;
-    margin: 30px 100px;
+    margin: 30px 0px;
+    padding: 0;
     display:flex;
-    align-content: center;
+    justify-content: center;
 }
 
 .image__description {
     visibility: hidden;
-    width: 100%;
-    padding: 0px 0px;
+    font-weight: lighter;
+    width:450px;
+    padding: 0px;
     text-align:center;
-    margin-bottom: 15px;
+    margin-top: 50px;
     color: white;
     background-color:dimgray;
     position:absolute;
@@ -93,8 +173,37 @@ img {
 }
 
 #photos {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content:space-evenly;
+}
+
+/* Styling Gallery h1s */
+
+.gallery_head {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Easter Eggs */
+#stone_egg img{
+    max-width: 50px;
+    border: none;
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#stone_egg {
+    position: fixed;
+    bottom: 80px;
+    right: 370px;
+    margin: 0;
+    padding: 0;
+}
+
+#stone_egg:hover img {
+    visibility: visible;
 }
