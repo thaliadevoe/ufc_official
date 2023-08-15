@@ -116,23 +116,87 @@ a:hover {
 }
 
 /* Images for the Home page */
-.photo_circle img{
-    border-radius: 50%;
-    max-width: 150px;
-    border: 4px double darkgoldenrod;
-}
 
 .photo_circle {
     display:flex;
-    /* justify-content: center; */
     position: relative;
+    margin: 0 40px;
+    padding: 0;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 4px double darkgoldenrod;
+    background-size: cover;
 }
 
 #homepage_photo_lineup {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content:space-evenly;
 }
+
+
+#home_image_1 {
+    background: url(Media/photos/other/cilva_sleep.jpg);
+    background-size: cover;
+}
+
+#home_image_1:hover {
+    background: url(Media/photos/other/cilva_up.jpg);
+    background-size: cover;
+}
+
+#home_image_2 {
+    background: url(Media/photos/other/pizza_lounge.jpg);
+    background-size: cover;
+}
+
+#home_image_2:hover {
+    background: url(Media/photos/other/pizza_distracted.jpg);
+    background-size: cover;
+}
+
+#home_image_3 {
+    background-image: url(Media/photos/other/kea_sleep.jpg);
+}
+
+#home_image_3:hover {
+    background-image: url(Media/photos/other/kea_up.jpg);
+}
+
+#home_image_4 {
+    background-image: url(Media/photos/other/bella_judge.jpg);
+}
+
+#home_image_4:hover {
+    background-image: url(Media/photos/other/bella_up.jpg);
+}
+
+#home_image_5 {
+    background-image: url(Media/photos/other/pony_splash.png);
+}
+
+#home_image_5:hover {
+    background-image: url(Media/photos/other/pony_strike_1.png);
+}
+
+#home_image_6 {
+    background-image: url(Media/photos/other/snowy_sideeye_cropped.png);
+}
+
+#home_image_6:hover {
+    background-image: url(Media/photos/other/snowy_displeased_cropped.png);
+}
+
+#home_image_7 {
+    background-image: url(Media/photos/other/ruari_sleep.jpg);
+}
+
+#home_image_7:hover {
+    background-image: url(Media/photos/other/ruari_up.jpg);
+}
+
 
 /* Images - Gallery */
 
