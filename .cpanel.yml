@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/theseu6/undergroundfolkcollective.com/cgi-bin/
+    - export DEPLOYPATH=/home/theseu6/undergroundfolkcollective.com/
     - /bin/cp -R undergroundfolkcollective $DEPLOYPATH
