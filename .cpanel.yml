@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/theseu6/repositories/undergroundfolkcollective/
+    - /bin/cp -R undergroundfolkcollective $DEPLOYPATH
