@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/theseu6/undergroundfolkcollective.com/
+    - export DEPLOYPATH=/home/theseu6/undergroundfolkcollective.co.uk/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp about.html $DEPLOYPATH
     - /bin/cp contact.html $DEPLOYPATH
@@ -9,3 +9,7 @@ deployment:
     - /bin/cp gallery_photos.html $DEPLOYPATH
     - /bin/cp gallery_videos.html $DEPLOYPATH
     - /bin/cp gallery_audio.html $DEPLOYPATH
+    - /bin/cp styles.css $DEPLOYPATH
+    - /bin/cp gallery_audio.html $DEPLOYPATH
+    - /bin/cp -R Media $DEPLOYPATH
+    - /bin/cp -R font-awesome-4.7.0 $DEPLOYPATH
