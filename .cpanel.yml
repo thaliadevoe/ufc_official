@@ -8,8 +8,8 @@ deployment:
     - /bin/cp upcoming.html $DEPLOYPATH
     - /bin/cp gallery_photos.html $DEPLOYPATH
     - /bin/cp gallery_videos.html $DEPLOYPATH
-    - /bin/cp gallery_audio.html $DEPLOYPATH
     - /bin/cp styles.css $DEPLOYPATH
-    - /bin/cp gallery_audio.html $DEPLOYPATH
+    - /bin/cp listen.html $DEPLOYPATH
+    - /bin/cp lyrics.html $DEPLOYPATH
     - /bin/cp -R Media $DEPLOYPATH
     - /bin/cp -R font-awesome-4.7.0 $DEPLOYPATH
