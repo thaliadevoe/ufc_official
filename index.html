@@ -13,6 +13,10 @@
             color: rgb(32, 14, 0);
             font-weight:bold;
         }
+        p {
+            color: rgb(32, 14, 0);
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
@@ -20,20 +24,26 @@
         <!-- Navigation -->
         <nav id="navbar">
             <ul>
-                <li class="nav_link"><a href="home.html">Home</a></li>
+                <li class="nav_link"><a href="index.html">Home</a></li>
                 <li class="nav_link"><a href="about.html">About Us</a></li>
                 <li class="nav_link"><a href="contact.html">Contact Us</a></li>
                 <li class="nav_link"><a href="upcoming.html">Upcoming</a></li>
-                <li class="nav_link" id="dropdown_catalyst"><a aria-haspopup="true">Gallery</a>
+                <li class="nav_link dropdown_catalyst"><a aria-haspopup="true">Gallery</a>
                     <ul class="nav_dropdown">
                         <li class="nav_dropdown_link"><a href="gallery_photos.html">Photos</a></li>
                         <li class="nav_dropdown_link"><a href="gallery_video.html">Videos</a></li>
-                        <li class="nav_dropdown_link"><a href="gallery_audio.html">Audio</a></li>
+                    </ul>
+                </li>
+                <li class="nav_link dropdown_catalyst"><a aria-haspopup="true">Music</a>
+                    <ul class="nav_dropdown">
+                        <li class="nav_dropdown_link"><a href="lyrics.html">Lyrics</a></li>
+                        <li class="nav_dropdown_link"><a href="listen.html">Listen</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
     </header>
+    
     <h1>Underground Folk Collective</h1>
         <span id="homepage_photo_lineup">
             <span class="photo_circle" id="home_image_1" aria-label="placeholder"></span>
