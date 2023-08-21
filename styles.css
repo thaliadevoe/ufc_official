@@ -1,10 +1,6 @@
 html {
     background-size: cover;
-}
-
-@font-face {
-    font-family: stripescaps;
-    src:url(/stripescaps/StripesCaps.ttf);
+    background-image: url(Media/photos/other/tree_closeup.png);
 }
 
 h1 {
@@ -13,14 +9,22 @@ h1 {
     font-size: 50px;
     text-align: center;
     width: 100%;
+    color:burlywood;
+    font-weight: normal;
 }
 
 p {
     font-family: Courier, monospace;
     font-variant: small-caps;
-    font-weight: 600;
+    color:rgb(240, 209, 169);
+    font-weight: normal;
     font-size: larger;
-    color: rgb(32, 14, 0);
+}
+
+
+/* Link Styling */
+a:hover {
+    color: maroon;
 }
 
 /* Styling text for About page */
@@ -44,6 +48,20 @@ p {
     font-size: 20px;
 }
 
+
+/* Styling for the Listen page */
+#audio {
+    display: inline-flex;
+    flex-direction: row;
+    flex-basis: 30%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.audio_block {
+    align-content: center;
+    width: 30%;
+}
+
 /* Dealing with the nav bar */
 a:link, .nav_link, a:visited, .nav_link:visited:visited {
     color:darkgoldenrod;
@@ -51,7 +69,6 @@ a:link, .nav_link, a:visited, .nav_link:visited:visited {
 
 nav a:hover, .nav_link:hover:hover {
     color:cornsilk;
-    /* background-color:maroon; */
 }
 
 a:active, .nav_link:active:active {
@@ -111,7 +128,6 @@ nav li a {
     background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #211a05 4px ), repeating-linear-gradient( #030f0055, #051f0055 );
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-
 }
 
 .nav_dropdown_link a {
@@ -121,14 +137,10 @@ nav li a {
     font-size:large;
 }
 
-#dropdown_catalyst:hover .nav_dropdown {
+.dropdown_catalyst:hover .nav_dropdown {
     visibility: visible;
 }
 
-/* Link Styling */
-a:hover {
-    color: maroon;
-}
 
 /* Images for the Home page */
 
