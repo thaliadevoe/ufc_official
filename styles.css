@@ -1,9 +1,4 @@
 html {
-    /* background-color:blanchedalmond; */
-    /* background-color: #fffff8;
-    opacity: 1;
-    background-image: radial-gradient(circle at center center, #fffefa, #fffff8), repeating-radial-gradient(circle at center center, #fffefa, #fffefa, 15px, transparent 30px, transparent 15px);
-    background-blend-mode: multiply; */
     background-size: cover;
 }
 
@@ -26,7 +21,27 @@ p {
     font-weight: 600;
     font-size: larger;
     color: rgb(32, 14, 0);
+}
 
+/* Styling text for About page */
+
+#about_block {
+    display:inline-flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+#about_all {
+    font-style: italic;
+}
+
+#about_block p {
+    margin: 20px;
+    width: 40%;
+    color:rgb(240, 209, 169);
+    font-weight: 200;
+    font-size: 20px;
 }
 
 /* Dealing with the nav bar */
