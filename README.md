@@ -17,4 +17,9 @@ Could also mention any long-running gigs (The Vine, any residencies we may get)
 Photos and Videos
 
 ## Songs for Reference
-Put Me in the Ground (Daniel Nunnelee) - https://www.youtube.com/watch?v=iimNbg156K4
+ - [x] Put Me in the Ground (Daniel Nunnelee) - https://www.youtube.com/watch?v=iimNbg156K4
+ - [ ] You Are My Sunshine (The Dead South) - https://www.youtube.com/watch?v=1MevYCdn5S8
+ - [x] Roll a Stone (Communist Daughter) - 
+ - [ ] (Noah Gunderson) - 
+ - [ ] My Name is John Johanna - https://www.youtube.com/watch?v=NgDUY9nTVVc
+ - [x] The Coo-Coo Bird (Clarence Ashley) - https://www.youtube.com/watch?v=UA5EPdZm2tA

@@ -1,6 +1,7 @@
 html {
     background-size: cover;
     background-image: url(Media/photos/other/tree_closeup.png);
+    color:rgb(240, 209, 169);
 }
 
 h1 {
@@ -16,7 +17,6 @@ h1 {
 p {
     font-family: Courier, monospace;
     font-variant: small-caps;
-    color:rgb(240, 209, 169);
     font-weight: normal;
     font-size: larger;
 }
@@ -69,6 +69,38 @@ a:hover {
     text-align: center;
 }
 
+
+/* Styling for the Lyrics page */
+
+#lyrics_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.lyrics_block {
+    width: auto;
+    border: 2px wheat;
+    justify-content: center;
+}
+
+.song_title {
+    font-size: larger;
+    font-weight: normal;
+    color: darkgoldenrod;
+    text-decoration:underline;
+    padding-bottom: 10px;
+}
+
+.lyrics_text {
+    width: auto;
+    font-size: large;
+    font-variant: normal;
+}
+
+.chorus_text {
+    color: darkgoldenrod;
+}
 
 /* Styling for the Listen page */
 #audio {
@@ -300,7 +332,7 @@ img {
 
 
 /* Easter Eggs */
-#stone_egg img{
+.easter_egg img{
     max-width: 50px;
     border: none;
     visibility: hidden;
@@ -308,14 +340,39 @@ img {
     padding: 0;
 }
 
-#stone_egg {
-    position: fixed;
+.easter_egg:hover img {
+    visibility: visible;
+}
+
+#contact_egg {
+    position: absolute;
     bottom: 80px;
     right: 370px;
     margin: 0;
     padding: 0;
 }
 
-#stone_egg:hover img {
-    visibility: visible;
+#lyrics_egg {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    bottom: -650px;
+    left: 650px;
 }
+
+#upcoming_egg{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 50px;
+}
+
+#about_egg {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    bottom: 140px;
+    left: 350px;
+}
+
+
