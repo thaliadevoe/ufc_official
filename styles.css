@@ -31,21 +31,42 @@ a:hover {
 
 #about_block {
     display:inline-flex;
-    flex-direction: row;
-    justify-content:center;
-    flex-wrap: wrap;
+    justify-items:left;
+    flex-flow: column wrap;
+    max-height: 800px;
 }
 
 #about_all {
     font-style: italic;
+    color: darkgoldenrod;
+}
+
+.about_first_word {
+    color: darkgoldenrod;
 }
 
 #about_block p {
     margin: 20px;
-    width: 40%;
-    color:rgb(240, 209, 169);
+    width: 45%;
     font-weight: 200;
     font-size: 20px;
+}
+
+
+/* Stylnig for the Video Gallery */
+
+#videos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.video_block {
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
 }
 
 
