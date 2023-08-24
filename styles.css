@@ -375,4 +375,11 @@ img {
     left: 350px;
 }
 
+#about_egg_2 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    bottom: -120px;
+    left: 600px;
+}
 

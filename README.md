@@ -18,8 +18,8 @@ Photos and Videos
 
 ## Songs for Reference
  - [x] Put Me in the Ground (Daniel Nunnelee) - https://www.youtube.com/watch?v=iimNbg156K4
- - [ ] You Are My Sunshine (The Dead South) - https://www.youtube.com/watch?v=1MevYCdn5S8
- - [x] Roll a Stone (Communist Daughter) - 
+ - [x] You Are My Sunshine (The Dead South) - https://www.youtube.com/watch?v=1MevYCdn5S8
+ - [x] Roll a Stone (Communist Daughter) - https://www.youtube.com/watch?v=9-JWFhMZuRQ
  - [ ] (Noah Gunderson) - 
- - [ ] My Name is John Johanna - https://www.youtube.com/watch?v=NgDUY9nTVVc
+ - [x] My Name is John Johanna (Kelly Harrell) - https://www.youtube.com/watch?v=NgDUY9nTVVc
  - [x] The Coo-Coo Bird (Clarence Ashley) - https://www.youtube.com/watch?v=UA5EPdZm2tA
