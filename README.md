@@ -2,10 +2,11 @@
 
 ## Notes on file setup
 
-### Home / About Us
+### Home
 Acts as index.html
 
-Who we are, what we do, how we got started
+### About Us
+Who we are, what we do, how we got started etc.
 
 ### Contact Us
 Links to socials
