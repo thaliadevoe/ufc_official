@@ -188,6 +188,37 @@ nav li a {
     text-decoration: none;
 }
 
+/* Mobile / screen size accomodations */
+
+@media only screen and (max-width: 800px) and (min-width: 400px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav li{
+        flex-basis: 30%;
+        justify-content: center;
+    }
+    nav li a {
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    nav li {
+        flex-basis: 50%;
+        justify-content: center;
+    }
+
+    nav li a {
+        padding: 10px;
+    }
+}
+
+
 /* Nav Dropdown */
 
 .nav_dropdown {
