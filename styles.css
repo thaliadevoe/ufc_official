@@ -27,6 +27,10 @@ a:hover {
     color: maroon;
 }
 
+a:active, .nav_link:active {
+    color:rgb(205, 154, 92);
+}
+
 /* Styling text for About page */
 
 #about_block {
@@ -74,6 +78,8 @@ a:hover {
     }
 }
 
+
+
 /* Styling for the Video Gallery */
 
 #videos {
@@ -89,6 +95,7 @@ a:hover {
     padding: 20px;
     text-align: center;
 }
+
 
 
 /* Styling for the Lyrics page */
@@ -123,7 +130,85 @@ a:hover {
     color: darkgoldenrod;
 }
 
+/* Mobile styling for Lyrics */
+/* nav */
+@media screen and (min-width: 800px) {
+    .mobile_lyrics_nav {
+        display: none;
+    }
+
+    .mobile_lyrics_jumpscroll {
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .mobile_lyrics_nav{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+    }
+    
+    .mobile_lyrics_item {
+        display: inline;
+        float:left;
+        margin: 10px;
+    }
+
+    .mobile_lyrics_item a {
+        display: block;
+        text-align:left;
+        text-decoration: none;
+    }
+    .mobile_lyrics_item a:hover {
+        color: cornsilk;
+    }
+
+    .mobile_lyrics_jumpscroll:link, .mobile_lyrics_jumpscroll:visited{
+        text-decoration: none;
+        font-style: italic;
+        color: cornsilk;
+        font-size: medium;
+    }
+
+    .mobile_lyrics_jumpscroll:hover {
+        color:wheat;
+    }    
+}
+
+/* alignment & font size */
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+    .lyrics_block {
+        margin: 0 20px;
+    }
+    .lyrics_text {
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 520px) {
+    #lyrics_main {
+        flex-direction: column;
+    }
+
+    .lyrics_block {
+        margin: 0px 20px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    #lyrics_main {
+        flex-direction: column;
+    }
+    .lyrics_block {
+        margin: 0 10px;
+    }
+}
+
+
+
 /* Styling for the Listen page */
+
 #audio {
     display: inline-flex;
     flex-direction: row;
@@ -137,18 +222,15 @@ a:hover {
 }
 
 
+
 /* Dealing with the nav bar links*/
 
-a:link, .nav_link, a:visited, .nav_link:visited:visited {
+a:link, .nav_link, a:visited {
     color:darkgoldenrod;
 }
 
 nav a:hover, .nav_link:hover:hover {
     color:cornsilk;
-}
-
-a:active, .nav_link:active:active {
-    color:rgb(205, 154, 92);
 }
 
 nav {
@@ -188,8 +270,7 @@ nav li a {
     text-decoration: none;
 }
 
-/* Mobile / screen size accomodations */
-
+/* Mobile + screen size accomodations */
 @media only screen and (max-width: 800px) and (min-width: 400px) {
     nav ul {
         display: flex;
@@ -218,9 +299,7 @@ nav li a {
     }
 }
 
-
 /* Nav Dropdown */
-
 .nav_dropdown {
     visibility:hidden;
     transition: 0.1s;
@@ -248,6 +327,7 @@ nav li a {
 .dropdown_catalyst:hover .nav_dropdown {
     visibility: visible;
 }
+
 
 
 /* Images for the Home page */
@@ -333,6 +413,7 @@ nav li a {
 }
 
 
+
 /* Images - Gallery */
 
 img {
@@ -378,6 +459,8 @@ img {
     justify-content:space-evenly;
 }
 
+
+
 /* Styling Gallery h1s */
 
 .gallery_head {
@@ -386,7 +469,9 @@ img {
 }
 
 
+
 /* Easter Eggs */
+
 .easter_egg img{
     max-width: 50px;
     border: none;
