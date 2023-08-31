@@ -347,29 +347,25 @@ nav li a {
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    border: 4px double darkgoldenrod;
+    border: 1px solid darkgoldenrod;
     background-size: cover;
 }
 
 
 #home_image_1 {
-    background: url(Media/photos/other/cilva_sleep.jpg);
-    background-size: cover;
+    background-image: url(Media/photos/other/cilva_sleep.jpg);
 }
 
 #home_image_1:hover {
-    background: url(Media/photos/other/cilva_up.jpg);
-    background-size: cover;
+    background-image: url(Media/photos/other/cilva_up.jpg);
 }
 
 #home_image_2 {
-    background: url(Media/photos/other/pizza_lounge.jpg);
-    background-size: cover;
+    background-image: url(Media/photos/other/pizza_lounge.jpg);
 }
 
 #home_image_2:hover {
-    background: url(Media/photos/other/pizza_distracted.jpg);
-    background-size: cover;
+    background-image: url(Media/photos/other/pizza_distracted.jpg);
 }
 
 #home_image_3 {
