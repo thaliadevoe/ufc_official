@@ -96,6 +96,11 @@ a:active, .nav_link:active {
     text-align: center;
 }
 
+.video_block iframe {
+    border: 2px solid rgba(17, 12, 0, 0.704);
+    border-radius: 13px;
+}
+
 
 
 /* Styling for the Lyrics page */
@@ -420,12 +425,20 @@ img {
     padding: 1px;
 }
 
+#photos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+
 .image__block {
     max-width: 450px;
     position: relative;
-    margin: 30px 0px;
+    margin: 25px 10px;
     padding: 0;
     display:flex;
+    flex-basis: 50%;
     justify-content: center;
 }
 
@@ -446,13 +459,6 @@ img {
 .image__block:hover .image__description {
     visibility: visible;
     opacity: .8;
-}
-
-#photos {
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
 }
 
 
