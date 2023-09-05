@@ -4,6 +4,16 @@ html {
     color:rgb(240, 209, 169);
 }
 
+/* Link Styling */
+a:hover {
+    color: maroon;
+}
+
+a:active, .nav_link:active {
+    color:rgb(205, 154, 92);
+}
+
+
 h1 {
     font-family:'Courier New', Courier, monospace;
     font-variant: small-caps;
@@ -21,209 +31,42 @@ p {
     font-size: larger;
 }
 
-
-/* Link Styling */
-a:hover {
-    color: maroon;
-}
-
-a:active, .nav_link:active {
-    color:rgb(205, 154, 92);
-}
-
-/* Styling text for About page */
-
-#about_block {
-    display:inline-flex;
-    justify-items:left;
-    flex-flow: column wrap;
-    max-height: 800px;
-}
-
-#about_all {
-    font-style: italic;
-    color: darkgoldenrod;
-}
-
-.about_first_word {
-    color: darkgoldenrod;
-}
-
-#about_block p {
-    margin: 20px;
-    width: 45%;
-    font-weight: 200;
-    font-size: 20px;
-}
-
-@media only screen and (max-width: 1000px) {
-    #about_block {
-        max-height: none;
-    }
-    #about_block p {
-        margin: 20px 5px;
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 1200px ) and (min-width: 1000px){
-    #about_block {
-        max-height: 1050px;
-    }
-}
-
-@media only screen and (max-width: 1400px) and (min-width: 1200px) {
-    #about_block {
-        max-height: 900px;
-    }
-}
-
-
-
-/* Styling for the Video Gallery */
-
-#videos {
+body {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    max-width: 99.6%;
+    align-content: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
 }
 
-.video_block {
-    justify-content: center;
-    padding: 20px;
-    text-align: center;
-}
-
-.video_block iframe {
-    border: 2px solid rgba(17, 12, 0, 0.704);
-    border-radius: 13px;
+main {
+    margin: 0;
+    padding: 0;
 }
 
 
 
-/* Styling for the Lyrics page */
+/* Styling the Footer */
 
-#lyrics_main {
+.footer_content {
+    background-image: url(Media/photos/other/tree_closeup.png);
+    background-size: cover;
+    margin: 20px 0 0 0;
+    padding: 0;
+    width: 100%;
+    height: 2rem;
+    position: absolute;
+    align-content:flex-end;
+    bottom: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.lyrics_block {
-    width: auto;
-    border: 2px wheat;
-    justify-content: center;
-}
-
-.song_title {
-    font-size: larger;
-    font-weight: normal;
-    color: darkgoldenrod;
-    text-decoration:underline;
-    padding-bottom: 10px;
-}
-
-.lyrics_text {
-    width: auto;
-    font-size: large;
-    font-variant: normal;
-}
-
-.chorus_text {
-    color: darkgoldenrod;
-}
-
-/* Mobile styling for Lyrics */
-/* nav */
-@media screen and (min-width: 800px) {
-    .mobile_lyrics_nav {
-        display: none;
-    }
-
-    .mobile_lyrics_jumpscroll {
-        display: none;
-    }
-}
-
-@media screen and (max-width:800px) {
-    .mobile_lyrics_nav{
-        display: flex;
-        flex-direction: column;
-        list-style-type: none;
-    }
-    
-    .mobile_lyrics_item {
-        display: inline;
-        float:left;
-        margin: 10px;
-    }
-
-    .mobile_lyrics_item a {
-        display: block;
-        text-align:left;
-        text-decoration: none;
-    }
-    .mobile_lyrics_item a:hover {
-        color: cornsilk;
-    }
-
-    .mobile_lyrics_jumpscroll:link, .mobile_lyrics_jumpscroll:visited{
-        text-decoration: none;
-        font-style: italic;
-        color: cornsilk;
-        font-size: medium;
-    }
-
-    .mobile_lyrics_jumpscroll:hover {
-        color:wheat;
-    }    
-}
-
-/* alignment & font size */
-@media only screen and (max-width: 1200px) and (min-width: 800px) {
-    .lyrics_block {
-        margin: 0 20px;
-    }
-    .lyrics_text {
-        font-size: medium;
-    }
-}
-
-@media only screen and (max-width: 800px) and (min-width: 520px) {
-    #lyrics_main {
-        flex-direction: column;
-    }
-
-    .lyrics_block {
-        margin: 0px 20px;
-    }
-}
-
-@media only screen and (max-width: 520px) {
-    #lyrics_main {
-        flex-direction: column;
-    }
-    .lyrics_block {
-        margin: 0 10px;
-    }
-}
-
-
-
-/* Styling for the Listen page */
-
-#audio {
-    display: inline-flex;
-    flex-direction: row;
-    flex-basis: 30%;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.audio_block {
-    align-content: center;
-    width: 30%;
+    justify-content:space-evenly;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 
@@ -239,11 +82,11 @@ nav a:hover, .nav_link:hover:hover {
 }
 
 nav {
-    margin-bottom: 20px;
+    margin: 5px 5px 0 5px;
     background-image: url(Media/photos/other/tree_closeup.png);
     background-size: cover;
     width: 100%;
-    padding: 15px 0px;
+    padding:10px 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -338,6 +181,8 @@ nav li a {
 /* Images for the Home page */
 
 #homepage_photo_lineup {
+    margin-bottom: 0;
+    padding-bottom: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -415,7 +260,65 @@ nav li a {
 
 
 
+/* Styling text for About page */
+
+#about_block {
+    display:inline-flex;
+    justify-items:left;
+    flex-flow: column wrap;
+    max-height: 770px;
+    padding-bottom: 3rem;
+}
+
+#about_all {
+    font-style: italic;
+    color: darkgoldenrod;
+}
+
+.about_first_word {
+    color: darkgoldenrod;
+}
+
+#about_block p {
+    margin: 20px;
+    width: 45%;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    #about_block {
+        max-height: none;
+    }
+    #about_block p {
+        margin: 20px 5px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1200px ) and (min-width: 1000px){
+    #about_block {
+        max-height: 1050px;
+    }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1200px) {
+    #about_block {
+        max-height: 900px;
+    }
+}
+
+
+
 /* Images - Gallery */
+
+#photos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding-bottom: 1rem;
+}
 
 img {
     width: 100%;
@@ -425,17 +328,10 @@ img {
     padding: 1px;
 }
 
-#photos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-}
-
 .image__block {
     max-width: 450px;
     position: relative;
-    margin: 25px 10px;
+    margin: 25px 15px;
     padding: 0;
     display:flex;
     flex-basis: 50%;
@@ -462,12 +358,194 @@ img {
 }
 
 
-
 /* Styling Gallery h1s */
 
 .gallery_head {
     width: 100%;
     text-align: center;
+}
+
+
+
+/* Styling for the Video Gallery */
+
+#videos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.video_block {
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.video_block iframe {
+    border: 2px solid rgba(17, 12, 0, 0.704);
+    border-radius: 13px;
+}
+
+
+
+/* Styling for the Lyrics page */
+
+#lyrics_main {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-content:flex-end;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.lyrics_block {
+    flex-basis: 40%;
+    /* margin:0 2rem; */
+    width: auto;
+    justify-content:center;
+    align-content: center;
+}
+
+.song_title {
+    font-size: larger;
+    font-weight: normal;
+    color: darkgoldenrod;
+    text-decoration:underline;
+    padding-bottom: 10px;
+}
+
+.lyrics_text {
+    width: auto;
+    font-size: large;
+    font-variant: normal;
+}
+
+.chorus_text {
+    color: darkgoldenrod;
+}
+
+.lyrics_text p {
+    line-height: 2.5rem;
+}
+
+/* Mobile styling for Lyrics */
+/* nav */
+@media screen and (min-width: 800px) {
+    .mobile_lyrics_nav {
+        display: none;
+    }
+
+    .mobile_lyrics_jumpscroll {
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #lyrics_main {
+        padding-bottom: 4rem;
+    }
+    .mobile_lyrics_nav{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+    }
+    
+    .mobile_lyrics_item {
+        display: inline;
+        float:left;
+        margin: 10px;
+    }
+
+    .mobile_lyrics_item a {
+        display: block;
+        text-align:left;
+        text-decoration: none;
+    }
+    .mobile_lyrics_item a:hover {
+        color: cornsilk;
+    }
+
+    .mobile_lyrics_jumpscroll:link, .mobile_lyrics_jumpscroll:visited{
+        text-decoration: none;
+        font-style: italic;
+        color: cornsilk;
+        font-size: medium;
+    }
+
+    .mobile_lyrics_jumpscroll:hover {
+        color:wheat;
+    }    
+}
+
+/* alignment & font size */
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+    body {
+        max-width: 98%;
+        align-content: center;
+    }
+    .lyrics_block {
+        margin: 0 20px;
+    }
+    .lyrics_text {
+        font-size: medium;
+    }
+    .lyrics_text p {
+        line-height: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 520px) {
+    body {
+        max-width: 96%;
+        align-content: center;
+    }
+    #lyrics_main {
+        flex-direction: column;
+    }
+
+    .lyrics_block {
+        margin: 0px 20px;
+    }
+    .lyrics_text p {
+        line-height: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    body {
+        max-width: 94%;
+        align-content: center;
+    }
+    #lyrics_main {
+        flex-direction: column;
+    }
+    .lyrics_block {
+        margin: 0 10px;
+    }
+    .lyrics_text p {
+        line-height: 2.2rem;
+    }
+}
+
+
+
+/* Styling for the Listen page */
+
+#audio {
+    display: inline-flex;
+    flex-direction: row;
+    flex-basis: 30%;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+}
+.audio_block {
+    align-content: center;
+    width: 30%;
 }
 
 
@@ -486,42 +564,42 @@ img {
     visibility: visible;
 }
 
-#contact_egg {
-    position: absolute;
-    bottom: 80px;
-    right: 370px;
-    margin: 0;
-    padding: 0;
-}
-
 #lyrics_egg {
     position: absolute;
     margin: 0;
     padding: 0;
-    bottom: -650px;
-    left: 650px;
+    bottom: 7rem;
+    left: 43rem;
 }
 
 #upcoming_egg{
     position: absolute;
     margin: 0;
     padding: 0;
-    left: 50px;
+    left: 5rem;
+}
+
+#upcoming_egg_2 {
+    position: absolute;
+    top: 10rem;
+    right: 10rem;
+    margin: 0;
+    padding: 0;
 }
 
 #about_egg {
     position: absolute;
     margin: 0;
     padding: 0;
-    bottom: 140px;
-    left: 350px;
+    bottom: 28.5rem;
+    left: 20rem;
 }
 
 #about_egg_2 {
     position: absolute;
     margin: 0;
     padding: 0;
-    bottom: -120px;
-    left: 600px;
+    bottom: 3rem;
+    left: 34rem;
 }
 
