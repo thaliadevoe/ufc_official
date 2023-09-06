@@ -4,7 +4,6 @@ deployment:
     - export DEPLOYPATH=/home/theseu6/undergroundfolkcollective.com/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp about.html $DEPLOYPATH
-    - /bin/cp contact.html $DEPLOYPATH
     - /bin/cp upcoming.html $DEPLOYPATH
     - /bin/cp gallery_photos.html $DEPLOYPATH
     - /bin/cp gallery_videos.html $DEPLOYPATH

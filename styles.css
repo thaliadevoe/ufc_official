@@ -697,12 +697,20 @@ img {
     visibility: visible;
 }
 
-#lyrics_egg {
+#about_egg {
     position: absolute;
     margin: 0;
     padding: 0;
-    bottom: 7rem;
-    left: 43rem;
+    bottom: 28.5rem;
+    left: 20rem;
+}
+
+#about_egg_2 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    bottom: 3rem;
+    left: 34rem;
 }
 
 #upcoming_egg{
@@ -720,19 +728,11 @@ img {
     padding: 0;
 }
 
-#about_egg {
+#lyrics_egg {
     position: absolute;
     margin: 0;
     padding: 0;
-    bottom: 28.5rem;
-    left: 20rem;
-}
-
-#about_egg_2 {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    bottom: 3rem;
-    left: 34rem;
+    bottom: 7rem;
+    left: 43rem;
 }
 
