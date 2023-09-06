@@ -14,7 +14,6 @@
             <ul>
                 <li class="nav_link"><a href="index.html">Home</a></li>
                 <li class="nav_link"><a href="about.html">About Us</a></li>
-                <li class="nav_link"><a href="contact.html">Contact Us</a></li>
                 <li class="nav_link"><a href="upcoming.html">Upcoming</a></li>
                 <li class="nav_link dropdown_catalyst"><a aria-haspopup="true">Gallery</a>
                     <ul class="nav_dropdown">
@@ -38,6 +37,7 @@
                 <li class="mobile_lyrics_item"><a href="#wont_the_devil_dance">Won't The Devil Dance With Me</a></li>
                 <li class="mobile_lyrics_item"><a href="#the_watchmaker">The Watchmaker</a></li>
                 <li class="mobile_lyrics_item"><a href="#coming_up_behind_me">Coming Up Behind Me</a></li>
+                <li class="mobile_lyrics_item"><a href="#jumbled_crooked_lines">Jumbled Crooked Lines</a></li>
                 <br>
             </ul>
             <section class="lyrics_block">
@@ -216,7 +216,7 @@
             </section>
             <section class="lyrics_block">
                 <h2 class="song_title" id="jumbled_crooked_lines">Jumbled Crooked Lines</h2>
-                <div class="lyrics_text">
+                <div class="lyrics_text" id="dad_written">
                     <p class="verse_text">
                         Earth may shudder, but here lie you and I<br/>
                         Faces turned the other way, looking to the sky<br/>                     
@@ -257,6 +257,9 @@
                         Calling what’s yours is nothing, what’s yours is mine<br/>
                         But now…<br/>
                     </p>
+                    
+                    <a href="#mobile_lyrics_main_nav" class="mobile_lyrics_jumpscroll">Back to top</a>
+                    <br> <br>
                 </div>
             </section>
         </div> 
@@ -264,8 +267,14 @@
 
     <footer>
         <section class="footer_content">
-            <p><i class="fa fa-instagram fa-lg" aria-hidden="true"></i> Instagram: @undergroundfolk</p>
-            <p><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> Email: contact@undergroundfolkcollective.com</p>
+            <p class="footer_item"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i> Instagram: @undergroundfolk</p>
+            <p class="footer_item"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> Email: contact@undergroundfolkcollective.com</p>
+            <form id="form_body"  class="footer_item" aria-labelledby="join mailing list">
+                <i class="fa fa-paper-plane fa-flip-horizontal form_item" aria-hidden="true"></i>
+                <!-- <label for="email" id="email_label" class="form_item">Join Our Mailing List:<input type="email" id="email" required placeholder="example@email.here" class="form_item"></label>
+                <label class="visually_hidden" for="submit" id="submit_label">Submit</label><input type="submit" id="submit" class="form_item"> -->
+                <label aria-labelledby="mailing list placeholder"> Mailing List coming soon!</label>
+            </form>
         </section>
         <div class="easter_egg" id="lyrics_egg">
             <a href="https://www.youtube.com/watch?v=iimNbg156K4" target="_blank">
@@ -273,6 +282,5 @@
             </a>
         </div>
     </footer>
-
 </body>
 </html>

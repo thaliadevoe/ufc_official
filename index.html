@@ -14,10 +14,6 @@
             color: rgb(32, 14, 0);
             font-weight:bold;
         }
-        /* p {
-            color: rgb(32, 14, 0);
-            font-weight: 600;
-        } */
     </style>
 </head>
 <body>
@@ -27,7 +23,6 @@
             <ul>
                 <li class="nav_link"><a href="index.html">Home</a></li>
                 <li class="nav_link"><a href="about.html">About Us</a></li>
-                <li class="nav_link"><a href="contact.html">Contact Us</a></li>
                 <li class="nav_link"><a href="upcoming.html">Upcoming</a></li>
                 <li class="nav_link dropdown_catalyst"><a aria-haspopup="true">Gallery</a>
                     <ul class="nav_dropdown">
@@ -60,8 +55,14 @@
     
     <footer>
         <section class="footer_content">
-            <p><i class="fa fa-instagram fa-lg" aria-hidden="true"></i> Instagram: @undergroundfolk</p>
-            <p><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> Email: contact@undergroundfolkcollective.com</p>
+            <p class="footer_item" aria-labelledby="instagram handle"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i> @undergroundfolk</p>
+            <p class="footer_item" aria-labelledby="email address"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> contact@undergroundfolkcollective.com</p>
+            <form id="form_body"  class="footer_item" aria-labelledby="join mailing list">
+                <i class="fa fa-paper-plane fa-flip-horizontal form_item" aria-hidden="true"></i>
+                <!-- <label for="email" id="email_label" class="form_item">Join Our Mailing List:<input type="email" id="email" required placeholder="example@email.here" class="form_item"></label>
+                <label class="visually_hidden" for="submit" id="submit_label">Submit</label><input type="submit" id="submit" class="form_item"> -->
+                <label aria-labelledby="mailing list placeholder"> Mailing List coming soon!</label>
+            </form>
         </section>
     </footer>        
 </body>

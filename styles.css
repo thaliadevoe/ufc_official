@@ -14,6 +14,8 @@ a:active, .nav_link:active {
 }
 
 
+/* General Elements */
+
 h1 {
     font-family:'Courier New', Courier, monospace;
     font-variant: small-caps;
@@ -36,16 +38,29 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    max-width: 99.6%;
-    align-content: center;
+    max-width: 100%;
+    align-items: normal;
+    justify-content:flex-start;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 main {
     margin: 0;
-    padding: 0;
+    padding-bottom: 5rem;
 }
+
+.visually_hidden {
+    border-width: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    white-space: nowrap !important;
+    width: 1px !important;
+  }
 
 
 
@@ -54,19 +69,88 @@ main {
 .footer_content {
     background-image: url(Media/photos/other/tree_closeup.png);
     background-size: cover;
-    margin: 20px 0 0 0;
+    margin: 0 2.2rem;
     padding: 0;
-    width: 100%;
+    width: 95%;
     height: 2rem;
-    position: absolute;
-    align-content:flex-end;
     bottom: 0;
+    position: absolute;
+    justify-content:space-between;
+    align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
-    align-items: center;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+}
+
+.footer_item {
+    margin: 0 1rem;
+    padding: 0;
+}
+
+/* Mailing List Form */
+
+.form_item {
+    margin-right: .5rem;
+    padding: 0;
+}
+
+label, input {
+    font-family: Courier, monospace;
+    font-variant: small-caps;
+    font-weight: normal;
+    font-size: inherit;
+}
+
+#submit, #email {
+    margin: .2rem 0 !important;
+}
+
+/* Handling screen width issues */
+
+@media only screen and (max-width: 1300px) and (min-width: 1230px) {
+    .footer_content {
+        height: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 1230px) and (min-width: 1150px) {
+    .footer_content {
+        height: 2.5rem;
+    }
+    .footer_content p, label, input {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1150px) and (min-width: 1000px) {
+    .footer_content {
+        height: 2.7rem;
+        margin: 0;
+        width: 100%;
+    }
+    .footer_content p, label, input {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .footer_content {
+        height: 4.5rem;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+    }
+    .footer_content p, label, input {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer_content {
+        height: 7rem;
+    }
 }
 
 
@@ -82,11 +166,11 @@ nav a:hover, .nav_link:hover:hover {
 }
 
 nav {
-    margin: 5px 5px 0 5px;
+    margin: 5px;
     background-image: url(Media/photos/other/tree_closeup.png);
     background-size: cover;
-    width: 100%;
-    padding:10px 0;
+    max-width: 100%;
+    padding:10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -258,6 +342,11 @@ nav li a {
     background-image: url(Media/photos/other/ruari_up.jpg);
 }
 
+@media only screen and (max-width: 500px) {
+    #homepage_photo_lineup {
+        margin-bottom: 5rem;
+    }
+}
 
 
 /* Styling text for About page */
@@ -268,14 +357,11 @@ nav li a {
     flex-flow: column wrap;
     max-height: 770px;
     padding-bottom: 3rem;
+    flex-wrap: wrap;
 }
 
 #about_all {
     font-style: italic;
-    color: darkgoldenrod;
-}
-
-.about_first_word {
     color: darkgoldenrod;
 }
 
@@ -286,13 +372,9 @@ nav li a {
     font-size: 20px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1400px) and (min-width: 1200px) {
     #about_block {
-        max-height: none;
-    }
-    #about_block p {
-        margin: 20px 5px;
-        width: 100%;
+        max-height: 900px;
     }
 }
 
@@ -302,9 +384,24 @@ nav li a {
     }
 }
 
-@media only screen and (max-width: 1400px) and (min-width: 1200px) {
+@media only screen and (max-width: 1000px) and (min-width: 650px) {
     #about_block {
-        max-height: 900px;
+        max-height: none;
+    }
+    #about_block p {
+        width: 95%;
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #about_block {
+        max-height: none;
+    }
+    #about_block p {
+        margin: 10px;
+        width: 90%;
+        padding: 3px;
     }
 }
 
@@ -357,6 +454,17 @@ img {
     opacity: .8;
 }
 
+@media only screen and (max-width: 1000px) {
+    #photos {
+        padding-bottom: 3rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #photos {
+        padding-bottom: 5rem;
+    }
+}
 
 /* Styling Gallery h1s */
 
@@ -387,6 +495,39 @@ img {
 .video_block iframe {
     border: 2px solid rgba(17, 12, 0, 0.704);
     border-radius: 13px;
+}
+
+@media screen and (max-width:1000px) and (min-width: 500px) {
+    #videos {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .video_block iframe {
+        height:337.5px;
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .video_block iframe {
+        height:281px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .video_block iframe {
+        height: 141px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #videos {
+        margin-bottom: 5rem;
+    }
 }
 
 
@@ -483,10 +624,6 @@ img {
 
 /* alignment & font size */
 @media only screen and (max-width: 1200px) and (min-width: 800px) {
-    body {
-        max-width: 98%;
-        align-content: center;
-    }
     .lyrics_block {
         margin: 0 20px;
     }
@@ -499,10 +636,6 @@ img {
 }
 
 @media only screen and (max-width: 800px) and (min-width: 520px) {
-    body {
-        max-width: 96%;
-        align-content: center;
-    }
     #lyrics_main {
         flex-direction: column;
     }
@@ -516,10 +649,6 @@ img {
 }
 
 @media only screen and (max-width: 520px) {
-    body {
-        max-width: 94%;
-        align-content: center;
-    }
     #lyrics_main {
         flex-direction: column;
     }
@@ -528,6 +657,10 @@ img {
     }
     .lyrics_text p {
         line-height: 2.2rem;
+    }
+    #dad_written p::after {
+        content: "\a";
+        white-space:pre;
     }
 }
 
