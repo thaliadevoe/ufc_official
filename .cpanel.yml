@@ -12,3 +12,4 @@ deployment:
     - /bin/cp lyrics.html $DEPLOYPATH
     - /bin/cp -R Media $DEPLOYPATH
     - /bin/cp -R font-awesome-4.7.0 $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
