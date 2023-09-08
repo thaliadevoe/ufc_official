@@ -89,22 +89,69 @@ main {
 }
 
 /* Mailing List Form */
-
-.form_item {
-    margin-right: .5rem;
-    padding: 0;
-}
-
-label, input {
+#form-button {
+    padding: 1px;
     font-family: Courier, monospace;
-    font-variant: small-caps;
     font-weight: normal;
-    font-size: inherit;
+    font-size: normal;
+    background-color: rgb(221, 206, 188);
+    color:rgb(29, 21, 0);
+    border-style:double;
+    border-radius: 4px;
+}
+#form-popup {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-style:double;
+    border-width: 5px;
 }
 
-#submit, #email {
-    margin: .2rem 0 !important;
+/* DO NOT TOUCH */
+.formButton {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
+/* Only width/height and bottom/right. NOTHING ELSE */
+.formButton .popupFrame {
+    visibility: hidden;
+    z-index: 1;
+    position: absolute;
+    bottom: 25px;
+    right: -10px;
+    width: 400px;
+    height: 270px;
+}
+/* If you need to... */
+.formButton .show {
+    visibility: visible;
+    -webkit-animation: fadeIn .5s;
+    animation: fadeIn .5s;
+}
+
+/* Animation for popup fade-in */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Handling positioning when screens are little */
+@media only screen and (max-width: 700px) {
+    .formButton .popupFrame {
+        right: -100px;
+        
+    }
+}
+/* Safe to touch! */
 
 /* Handling screen width issues */
 
@@ -131,6 +178,9 @@ label, input {
     }
     .footer_content p, label, input {
         font-size: 1rem;
+    }
+    #form-button {
+        font-size: small;
     }
 }
 
@@ -327,18 +377,10 @@ nav li a {
 }
 
 #home_image_6 {
-    background-image: url(Media/photos/other/snowy_sideeye_cropped.png);
-}
-
-#home_image_6:hover {
-    background-image: url(Media/photos/other/snowy_displeased_cropped.png);
-}
-
-#home_image_7 {
     background-image: url(Media/photos/other/ruari_sleep.jpg);
 }
 
-#home_image_7:hover {
+#home_image_6:hover {
     background-image: url(Media/photos/other/ruari_up.jpg);
 }
 
@@ -347,6 +389,7 @@ nav li a {
         margin-bottom: 5rem;
     }
 }
+
 
 
 /* Styling text for About page */
@@ -419,7 +462,7 @@ nav li a {
 
 img {
     width: 100%;
-    margin: 30px 0;
+    margin: 30px 10px;
     border-radius: 5%;
     border: 3px solid darkgoldenrod;
     padding: 1px;
@@ -428,7 +471,7 @@ img {
 .image__block {
     max-width: 450px;
     position: relative;
-    margin: 25px 15px;
+    margin: 25px 20px;
     padding: 0;
     display:flex;
     flex-basis: 50%;
@@ -438,7 +481,7 @@ img {
 .image__description {
     visibility: hidden;
     font-weight: lighter;
-    width:100%;
+    width:95%;
     padding: 0px;
     text-align:center;
     margin-top: 50px;
@@ -539,13 +582,16 @@ img {
     flex-direction: row;
     justify-content:center;
     align-content:flex-end;
-    padding-bottom: 2rem;
+    /* padding-bottom: 0rem;
+    margin-bottom: 0; */
     flex-wrap: wrap;
 }
 
 .lyrics_block {
     flex-basis: 40%;
-    /* margin:0 2rem; */
+    margin-top:1rem;
+    /* margin-bottom: 0;
+    padding-bottom: 0; */
     width: auto;
     justify-content:center;
     align-content: center;
@@ -573,14 +619,28 @@ img {
     line-height: 2.5rem;
 }
 
+/* Styling Lyrics navbar */
+.lyrics_nav {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    width: 70%;
+    justify-content: space-between;
+    background-color:#101000;
+    border-radius: 10px;
+}
+
+.lyrics_item a {
+    display: block;
+    text-align:left;
+    text-decoration: none;
+}
+
 /* Mobile styling for Lyrics */
 /* nav */
 @media screen and (min-width: 800px) {
-    .mobile_lyrics_nav {
-        display: none;
-    }
 
-    .mobile_lyrics_jumpscroll {
+    .lyrics_jumpscroll {
         display: none;
     }
 }
@@ -589,35 +649,33 @@ img {
     #lyrics_main {
         padding-bottom: 4rem;
     }
-    .mobile_lyrics_nav{
-        display: flex;
+    .lyrics_nav{
         flex-direction: column;
-        list-style-type: none;
+        background:none;
     }
     
-    .mobile_lyrics_item {
+    .lyrics_item {
         display: inline;
         float:left;
         margin: 10px;
     }
 
-    .mobile_lyrics_item a {
+    .lyrics_item a {
         display: block;
         text-align:left;
-        text-decoration: none;
     }
-    .mobile_lyrics_item a:hover {
+    .lyrics_item a:hover {
         color: cornsilk;
     }
 
-    .mobile_lyrics_jumpscroll:link, .mobile_lyrics_jumpscroll:visited{
+    .lyrics_jumpscroll:link, .lyrics_jumpscroll:visited{
         text-decoration: none;
         font-style: italic;
         color: cornsilk;
         font-size: medium;
     }
 
-    .mobile_lyrics_jumpscroll:hover {
+    .lyrics_jumpscroll:hover {
         color:wheat;
     }    
 }
@@ -633,6 +691,15 @@ img {
     .lyrics_text p {
         line-height: 2.2rem;
     }
+    .lyrics_nav {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .lyrics_nav {
+        width: 95%;
+    }
 }
 
 @media only screen and (max-width: 800px) and (min-width: 520px) {
@@ -646,6 +713,7 @@ img {
     .lyrics_text p {
         line-height: 2.2rem;
     }
+
 }
 
 @media only screen and (max-width: 520px) {

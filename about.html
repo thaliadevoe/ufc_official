@@ -58,35 +58,29 @@
                 <span style="color: darkgoldenrod;">Mike</span> – lead and backing vocals and on multiple instruments. The most accomplished musician of the group, he’s a one-man band and locally known solo performer somehow at peace operating within a sometimes cacophonous seven-piece ensemble. Has a voice pretty enough to override the underlying darkness of what we typically play. Writes songs that evoke hope from hopelessness. 
             </p>
             <p>
-                <span style="color: darkgoldenrod;">Joseph</span> – anchoring most songs with a most unusual bass uke, and sometimes on guitar (or other instrument that moves him) and vocals. His bass uke is just loud enough to rattle unanchored glasses off the bar. A well-travelled Brit, he’s settled again in the north after many years in London, Wales, and abroad. 
-            </p>
-            <p>
                 <span style="color: darkgoldenrod;">Dan</span> – harmonica, guitar, vocals, infrequent percussion, and occasional jawharp. Another American ex-pat, English Lit major, former rock music business wannabe whose musical perspective was transformed by the re-release of the <i>Anthology of American Folk Music</i> in 1997. Plays and sings with more gusto than intricacy. The most mortality-focused, having seen its presence reach for him at least three times without success. He writes mortality-tinged songs for English majors to dissect. Also, father of Thalia. 
             </p>
         </div>
     </main>
 
     <footer>
+        <!-- Contact Info & Mailing List sign-up -->
         <section class="footer_content">
             <p class="footer_item" aria-labelledby="instagram handle"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i> @undergroundfolk</p>
             <p class="footer_item" aria-labelledby="email address"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> contact@undergroundfolkcollective.com</p>
-            <form id="form_body"  class="footer_item" aria-labelledby="join mailing list">
-                <i class="fa fa-paper-plane fa-flip-horizontal form_item" aria-hidden="true"></i>
-                <!-- <label for="email" id="email_label" class="form_item">Join Our Mailing List:<input type="email" id="email" required placeholder="example@email.here" class="form_item"></label>
-                <label class="visually_hidden" for="submit" id="submit_label">Submit</label><input type="submit" id="submit" class="form_item"> -->
-                <label aria-labelledby="mailing list placeholder"> Mailing List coming soon!</label>
-            </form>
+            <!-- Mailing List -->
+            <button class="footer_item formButton" aria-label="click to join mailing list" onclick="openForm()" id="form-button">
+                <i class="fa fa-paper-plane fa-flip-horizontal form_item" aria-hidden="true"></i> Join Our Mailing List!
+                <iframe src="https://bandsintown.com/artist/15527060/email_signup_form?headerTextColor=rgba(0,0,0,1)&backgroundColor=rgba(248,241,228,1)&ctaBackgroundColor=rgba(37,19,0,1)&title=MAILING LIST&headerTextStyle=normal&headerText=Join us in our dark, happy subterranean lair. Toggle button again to exit.&font=Courier&ctaIcon=show&ctaBorderRadius=10px&ctaBorderWidth=3px&ctaBorderColor=rgba(175,146,51,1)&ctaFontColor=rgba(253,250,232,1)&alignment=center&emailInputField=show&ctaLabel=Subscribe&layout=narrow&locale=en&ctaSize=medium" width="100%" height="220px" title="Mailing List Joinup Form" id="form-popup" class="popupFrame"></iframe>
+            </button>
         </section>
-        <div class="easter_egg" id="about_egg">
-            <a href="https://www.youtube.com/watch?v=UA5EPdZm2tA" target="_blank">
-                <img src="Media/photos/other/honeybadger_skeleton.jpeg">
-            </a>
-        </div>
-        <div class="easter_egg" id="about_egg_2">
-            <a href="https://www.youtube.com/watch?v=NgDUY9nTVVc" target="_blank">
-                <img src="Media/photos/other/honeybadger_skeleton.jpeg">
-            </a>
-        </div>
     </footer>
+    <!-- JS script for the mailing list -->
+    <script>
+        function openForm() {
+            var formButton = document.getElementById("form-popup");
+            formButton.classList.toggle("show");
+        }
+    </script>
 </body>
 </html>

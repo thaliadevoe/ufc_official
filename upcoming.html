@@ -31,30 +31,41 @@
         </nav>
     </header>
 
+    <main>
     <!-- Also may include residencies -->
     <h1>Gigs</h1>
     <h1>Open mics</h1>
+    </main>
+
+    <footer>
+        <!-- Contact Info & Mailing List sign-up -->
+        <section class="footer_content">
+            <p class="footer_item" aria-labelledby="instagram handle"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i> @undergroundfolk</p>
+            <p class="footer_item" aria-labelledby="email address"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> contact@undergroundfolkcollective.com</p>
+            <!-- Mailing List -->
+            <button class="footer_item formButton" aria-label="click to join mailing list" onclick="openForm()" id="form-button">
+                <i class="fa fa-paper-plane fa-flip-horizontal form_item" aria-hidden="true"></i> Join Our Mailing List!
+                <iframe src="https://bandsintown.com/artist/15527060/email_signup_form?headerTextColor=rgba(0,0,0,1)&backgroundColor=rgba(248,241,228,1)&ctaBackgroundColor=rgba(37,19,0,1)&title=MAILING LIST&headerTextStyle=normal&headerText=Join us in our dark, happy subterranean lair. Toggle button again to exit.&font=Courier&ctaIcon=show&ctaBorderRadius=10px&ctaBorderWidth=3px&ctaBorderColor=rgba(175,146,51,1)&ctaFontColor=rgba(253,250,232,1)&alignment=center&emailInputField=show&ctaLabel=Subscribe&layout=narrow&locale=en&ctaSize=medium" width="100%" height="220px" title="Mailing List Joinup Form" id="form-popup" class="popupFrame"></iframe>
+            </button>
+        </section>
+        <!-- Easter Eggs -->
+        <div class="easter_egg" id="upcoming_egg">
+            <a href="https://www.youtube.com/watch?v=1MevYCdn5S8" target="_blank">
+                <img src="Media/photos/other/honeybadger_skeleton.jpeg">
+            </a>
+        </div>
+        <div class="easter_egg" id="upcoming_egg_2">
+            <a href="https://www.youtube.com/watch?v=9-JWFhMZuRQ" target="_blank">
+                <img src="Media/photos/other/honeybadger_skeleton.jpeg">
+            </a>
+        </div>
+    </footer>
+    <!-- JS script for the mailing list -->
+    <script>
+        function openForm() {
+            var formButton = document.getElementById("form-popup");
+            formButton.classList.toggle("show");
+        }
+    </script>
 </body>
-<footer>
-    <section class="footer_content">
-        <p class="footer_item" aria-labelledby="instagram handle"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i> @undergroundfolk</p>
-        <p class="footer_item" aria-labelledby="email address"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> contact@undergroundfolkcollective.com</p>
-        <form id="form_body"  class="footer_item" aria-labelledby="join mailing list">
-            <i class="fa fa-paper-plane fa-flip-horizontal form_item" aria-hidden="true"></i>
-            <!-- <label for="email" id="email_label" class="form_item">Join Our Mailing List:<input type="email" id="email" required placeholder="example@email.here" class="form_item"></label>
-            <label class="visually_hidden" for="submit" id="submit_label">Submit</label><input type="submit" id="submit" class="form_item"> -->
-            <label aria-labelledby="mailing list placeholder"> Mailing List coming soon!</label>
-        </form>
-    </section>
-    <div class="easter_egg" id="upcoming_egg">
-        <a href="https://www.youtube.com/watch?v=1MevYCdn5S8" target="_blank">
-            <img src="Media/photos/other/honeybadger_skeleton.jpeg">
-        </a>
-    </div>
-    <div class="easter_egg" id="upcoming_egg_2">
-        <a href="https://www.youtube.com/watch?v=9-JWFhMZuRQ" target="_blank">
-            <img src="Media/photos/other/honeybadger_skeleton.jpeg">
-        </a>
-    </div>
-</footer>
 </html>
